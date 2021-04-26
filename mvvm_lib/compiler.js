@@ -34,7 +34,7 @@ export class Compiler {
     }
 
     _compileElement(node, elementId) {
-        const reg = /:c-/;
+        const reg = /c-/;
         Array.from(node.attributes).forEach(attr => {
             if (utils.isAttrNode(attr)) {
                 if (reg.test(attr.nodeName)) {
@@ -46,8 +46,6 @@ export class Compiler {
                     this._registerOnChange(bindingInf);
                 }
             }
-
-
         })
     }
 
@@ -61,12 +59,6 @@ export class Compiler {
             this.vm.bindInfToState(elementId, state, bindingInf);
             this.vm.writeValue(bindingInf);
         }
-        console.log(match);
-        console.log(node);
-        // if(reg.test(node.nodeValue)){
-        //     reg.exec(n)
-        //     console.log('ok')
-        // }
     }
 
     _registerOnChange(inf) {

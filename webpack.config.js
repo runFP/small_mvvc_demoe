@@ -33,7 +33,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/home/home.html",
             filename: "index.html",
-            title: 'test',
+            title: 'small mvvm frame',
         }),
     ]
 }

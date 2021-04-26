@@ -10,7 +10,6 @@ export class ViewModal {
          */
         this._scopeContainer = {};
         ViewModal.instance = this;
-
     }
 
     /**
@@ -31,7 +30,6 @@ export class ViewModal {
     bindInfToState(scopeId, state, inf) {
         if (!this._scopeContainer[scopeId].states[state]) this._scopeContainer[scopeId].states[state] = [];
         this._scopeContainer[scopeId].states[state].push(inf);
-
     }
 
     /**
@@ -111,8 +109,6 @@ export class ViewModal {
     _getScopeStateInf(id, state) {
         return this._scopeContainer[id].states[state] || [];
     }
-
-
 }
 
 ViewModal.instance = null;

@@ -1,5 +1,5 @@
 import './src/home/hero'
-import {Compiler} from '/mvvc_lib/compiler'
+import {Compiler} from '/demo/small_mvvc_demoe/mvvm_lib/compiler'
 import {HeroComponent} from './src/home/hero'
 import {HeroComponent2} from "./src/home/hero2";
 
