@@ -1,4 +1,4 @@
-#small mvvm frame
+#1个无聊写的小MVVC框架
 feature
  - two-way binding data between view and modal
  - Independent modal's scopes can't impact each other
