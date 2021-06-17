@@ -1,4 +1,4 @@
-# 1个无聊时候写的迷你MVVC框架demo
+# 无聊写的1个迷你MVVC框架demo
 
 feature
  - two-way binding data between view and modal
